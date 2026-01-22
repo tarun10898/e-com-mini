@@ -20,6 +20,7 @@ class CartItem(Base):
     cart_id = Column(Integer, ForeignKey("carts.id"))
     product_id = Column(Integer, ForeignKey("products.id"))
     quantity = Column(Integer, default=1)
+    created_at = Column(DateTime(timezone=True), server_default=func.now())
     
     cart = relationship("Cart", back_populates="items")
     # product = relationship("Product") # Relationship needed? Usually yes.
