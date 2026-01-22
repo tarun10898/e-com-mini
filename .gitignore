@@ -1,0 +1,27 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+venv/
+.env
+
+# Node.js
+node_modules/
+dist/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Mac
+.DS_Store
+
+# IDEs
+.vscode/
+.idea/
+
+# Docker
+postgres_data/
+
+# Coverage
+.coverage
+htmlcov/
